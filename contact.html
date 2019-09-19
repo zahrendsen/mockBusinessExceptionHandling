@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Hops :: Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles1.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Passion+One" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="topnav">
+            <nav>
+                <ul>
+
+                    <li><a href="index.html" id="home">Home</a></li>
+
+                    <li><a href="signup.html">Sign Up</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="login.php">Admin</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div id="logocomplete">
+            <div id="companyname">
+                <h1>Hops Footwear</h1>
+            </div>
+            <img id="logoimg" src="images/rabbit.png" alt="rabbit" />
+            <div id="slogan">
+                <h3>Contact Us</h3>
+            </div>
+        </div>
+    </header>
+    <form action="thankyou.php" method="post">
+        <label for="fname">First Name*</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name*</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="email">Email*</label>
+        <input type="text" id="email" name="email" placeholder="name@email.com" required>
+        <label for="reason">Reason For Contact</label>
+        <select name="reason" id="reason">
+            <option value="reasonDefault" selected>Select a Reason..</option>
+            <option value="question">Question</option>
+            <option value="comment">Comment</option>
+            <option value="complaint">Complaint</option>
+        </select>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" placeholder="..." style="height:170px" required></textarea>
+        <input type="submit" id="subButton" value="Submit">
+    </form>
+
+</body>
+
+</html>
